@@ -234,5 +234,20 @@
     <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
     <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
     <script src="./js/script.js"></script>  <!-- Custom scripts -->
+
+
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '64fee33720a0870006e75925' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
 </body>
 </html>
